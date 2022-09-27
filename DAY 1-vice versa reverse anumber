@@ -1,0 +1,53 @@
+#include <stdio.h>
+ int main()
+{
+    long num, reverse = 0, temp, remainder;
+    printf("Enter the number:\n");
+    scanf("%ld", &num);
+    temp = num;
+    while (num > 0)
+    {
+        remainder = num % 10;
+        reverse = reverse * 10 + remainder;
+        num /= 10;
+    }
+    printf("Given number = %ld\n", temp);
+    printf("Reverse of a Number is %ld\n", reverse);
+}
+
+sample input :
+enter the number :14567
+sample ouput :
+reverse number : 76541
+
+
+test cases:
+1) -45721
+Enter the number:
+-45721
+Given number = -45721
+Reverse of a Number is 0
+
+2) 000
+Enter the number:
+000
+Given number = 0
+Reverse of a Number is 0
+
+3) AD1947
+Enter the number:
+AD1947
+Given number = 94674386297584
+Reverse of a Number is 48579268347649
+
+4) !@#$%
+Enter the number:
+!@#$%
+Given number = 94676615914224
+Reverse of a Number is 42241951667649
+
+5) 145*999=144855
+Enter the number:
+145*999=144855
+Given number = 145
+Reverse of a Number is 541
