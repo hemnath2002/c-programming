@@ -1,0 +1,57 @@
+#include <stdio.h>
+int main()
+{
+    int i, num, sum = 0;
+    printf("Enter any number to check perfect number: ");
+    if(scanf("%d", &num)==1)
+    {
+    	 for(i = 1; i <= num / 2; i++)
+    {
+    if(num%i == 0)
+        {
+            sum += i;
+        }
+    }
+    if(sum == num && num > 0)
+    {
+        printf("%d is PERFECT NUMBER", num);
+    }
+    else
+    {
+        printf("%d is NOT PERFECT NUMBER", num);
+    }
+
+	}
+	else
+	printf("invalid");
+
+    return 0;
+}
+
+sample input:
+given number:6
+
+sample output:
+Its a perfect number
+
+test cases:
+
+1) 17
+Enter any number to check perfect number: 17
+17 is NOT PERFECT NUMBER
+
+2) 26!
+Enter any number to check perfect number: 26!
+26 is NOT PERFECT NUMBER
+
+3) 143
+Enter any number to check perfect number: 143
+143 is NOT PERFECT NUMBER
+
+4) 84.1
+Enter any number to check perfect number: 84.1
+84 is NOT PERFECT NUMBER
+
+5) -963
+Enter any number to check perfect number: -963
+-963 is NOT PERFECT NUMBER
