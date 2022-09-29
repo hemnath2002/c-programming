@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+    int num, even;
+    int *ptr;
+    ptr = &num;
+    printf("Enter number: ");
+    scanf("%d",ptr); //ptr has address of num
+    even = *ptr%2;
+    if(even == 0){
+        printf("%d is even.\n", *ptr);
+    }
+    else{
+        printf("%d is odd.\n", *ptr);
+    }
+    return 0;
+}
