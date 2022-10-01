@@ -1,0 +1,38 @@
+#include <stdio.h>
+ struct student
+{
+    int  marks[4];
+    int  total;
+    float f;
+    int p,c,m,ph;
+};
+ int main()
+{
+    struct student s;
+    int i;
+    int p,c,m,ph,total;
+    float f;
+ 	printf("Enter marks:\n");
+    s.total=0;
+    
+    printf("enter marks in python:");
+    scanf("%d",&p);
+    printf("enter marks in c:");
+    scanf("%d",&c);
+    printf("enter marks in maths:");
+    scanf("%d",&m);
+    printf("enter marks in physics:");
+    scanf("%d",&ph);
+        if (p&&c&&m&&ph<=0)
+        {
+        	printf("\nenter postive");
+		}
+        total=p+c+m+ph;
+    
+    f=((float)total/(float)400)*100;
+    if (p&&c&&m&&ph>0)
+    {
+ 	printf("\nTotal Marks: %d \nPercentage: %.2f",total,f);
+ 	}
+	 return 0;
+}
